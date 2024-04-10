@@ -14,7 +14,7 @@ hero:
       text: API Examples
       link: /api-examples
   image:
-    src: /public/jellyfish.png
+    src: https://resources.laihua.com/2024-4-10/9b8c7c60-f74a-11ee-86b9-0b4304a20114nail.png
     alt: VitePress
 
 features:
