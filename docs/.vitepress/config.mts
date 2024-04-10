@@ -3,14 +3,21 @@ import index from './index.mts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "夜晚的潜水艇",
   description: "A VitePress Site",
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/public/favicon.ico' }],
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
+
+    // logo: { src: '/public/apple-touch-icon.png',  width: 24, height: 24 },
 
     // sidebar: [
     //   {
@@ -23,14 +30,20 @@ export default defineConfig({
     // ],
     sidebar: index,
 
-    // footer: {
-    //   message: '基于 MIT 许可发布',
-    //   copyright: `版权所有 © 2019-${new Date().getFullYear()}`
-    // },
+    footer: {
+      message: '基于 MIT 许可发布，技术驱动：<a href="https://vitepress.dev/" target="_blank">Vitepress</a>',
+      copyright: `Copyleft © 2019-${new Date().getFullYear()}`
+    },
+
     docFooter: {
       prev: '上一篇',
       next: '下一篇'
     },
+
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
