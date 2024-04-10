@@ -31,8 +31,8 @@ export default defineConfig({
     sidebar: index,
 
     footer: {
-      message: '基于 MIT 许可发布，技术驱动：<a href="https://vitepress.dev/" target="_blank">Vitepress</a>',
-      copyright: `Copyleft © 2019-${new Date().getFullYear()}`
+      message: '基于 MIT 许可发布，技术驱动：<a href="https://vitepress.dev/" target="_blank">Vitepress</a> / <a href="https://vercel.com/" target="_blank">Vercel</a>',
+      copyright: `Copyleft © 2019-${new Date().getFullYear()} 版权所无`
     },
 
     docFooter: {
