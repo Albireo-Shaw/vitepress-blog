@@ -7,7 +7,7 @@ export default defineConfig({
   description: "A VitePress Site",
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/public/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.ico' }],
   ],
 
   themeConfig: {
