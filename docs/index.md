@@ -14,7 +14,8 @@ hero:
       text: ChatGPT
       link: https://nextjs-chat-silk-chi.vercel.app/
   image:
-    src: https://resources.laihua.com/2024-4-10/9b8c7c60-f74a-11ee-86b9-0b4304a20114nail.png
+    # src: https://resources.laihua.com/2024-4-10/9b8c7c60-f74a-11ee-86b9-0b4304a20114nail.png
+    src: /jellyfish.png
     alt: VitePress
 
 features:
