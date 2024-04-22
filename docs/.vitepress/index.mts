@@ -8,12 +8,17 @@ const index: DefaultTheme.SidebarItem[] = [
         { text: 'Runtime API Examples', link: '/api-examples' }
     ]
   },
+  
   {
-    text: 'foo',
+    text: 'Go',
     items: [
-      { text: 'bar', link: '/foo/bar' }
+      { text: '一些记录', link: '/golang/some-little-tips' },
+      { text: '代理问题', link: '/golang/proxy' },
+      { text: '内存哲学', link: '/golang/quote-shared-memory' },
     ]
-  }
+  },
+
+
 ]
 
 export default index
