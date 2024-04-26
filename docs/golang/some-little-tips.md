@@ -110,3 +110,24 @@ make run
 `https://github.com/GoogleCloudPlatform/go-templates`
 
 `https://github.com/ServiceWeaver/template`
+
+# 使用Air来热重载服务
+
+在使用Gin框架进行Web开发时，如果想要实现文件变动后自动重启服务的功能，可以考虑使用一些第三方的热重载工具。以下是一些常用的Go语言热重载工具，它们可以监控文件变化并自动重新编译和启动应用程序：
+
+1. **air**: 
+  Air 是一个用于Go应用程序的热重载工具，可以监控项目中文件的改变并自动编译运行。使用方法很简单，只需要安装后再项目根目录下创建一个`.air.toml`配置文件，然后在命令行运行`air`即可。
+
+  安装air:
+  ```sh
+  go install github.com/cosmtrek/air@latest
+  ```
+
+  在项目根目录创建`.air.toml`配置文件，配置你的项目信息，然后只需在命令行中运行`air`即可开始监控。
+  
+  如果只是简单使用，不想建立配置文件，可以直接启动：
+  ```sh
+  air serve
+  ```
+  以上相当于执行`go run main.go serve`，后面可以跟上其它参数。
+   
