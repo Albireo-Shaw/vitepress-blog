@@ -15,6 +15,7 @@ const index: DefaultTheme.SidebarItem[] = [
       { text: '一些记录', link: '/golang/some-little-tips' },
       { text: '代理问题', link: '/golang/proxy' },
       { text: '内存哲学', link: '/golang/quote-shared-memory' },
+      { text: 'Gin JWT实现', link: '/golang/gin-jwt'}
     ]
   },
 
