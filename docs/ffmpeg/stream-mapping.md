@@ -5,11 +5,12 @@
 ## 先看流的顺序
 
 ```bash
-ffprobe -v error -show_entries stream=index,codec_type,codec_name:stream_tags=language,title \
+ffprobe -v error \
+  -show_entries stream=index,codec_type,channels:stream_tags=language,title:stream_disposition=default \
   -of json lesson.mkv
 ```
 
-假设查到的顺序是视频 `#0:0`、5.1 声道评论 `#0:1`、双声道正片 `#0:2`。执行 `ffmpeg -i lesson.mkv -c copy output.mkv` 时，`copy` 只规定入选的流怎么处理。常规自动选择会挑声道数最多的那条音轨。混得比较热闹的一方赢了。
+假设查到的顺序是视频 `#0:0`、5.1 声道评论 `#0:1`、双声道正片 `#0:2`，其中评论轨还被标为默认。执行 `ffmpeg -i lesson.mkv -c copy output.mkv` 时，`copy` 只规定入选的流怎么处理。FFmpeg 自动挑选音轨时会考虑声道数。在 FFmpeg 7.1 里，单个输入内的默认标记也会影响选择，甚至能让双声道胜过 5.1。至于哪条才是正片，它得听我们指定。 [FFmpeg 7.1 的音轨选择实现](https://ffmpeg.org/doxygen/7.1/ffmpeg__mux__init_8c_source.html#l01609)
 
 要留正片，可以直接按索引选。
 
