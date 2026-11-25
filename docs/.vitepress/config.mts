@@ -14,21 +14,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: '技术文章', link: '/typescript/runtime-validation', activeMatch: '^/(golang|typescript|postgresql|ffmpeg)/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '技术文章', link: '/typescript/runtime-validation', activeMatch: '^/(golang|typescript|postgresql|ffmpeg)/' }
     ],
 
     // logo: { src: '/public/apple-touch-icon.png',  width: 24, height: 24 },
 
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
     sidebar: index,
 
     footer: {

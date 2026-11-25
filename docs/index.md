@@ -8,8 +8,8 @@ hero:
   tagline: "编程 · 乱想 · 读书 · 写作"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 技术文章
+      link: /typescript/runtime-validation
     - theme: alt
       text: ChatGPT
       link: https://nextjs-chat-silk-chi.vercel.app/
